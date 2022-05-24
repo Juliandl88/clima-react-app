@@ -13,7 +13,7 @@ export default function WeatherMainInfo({ weather }) {
         </div>
         <div>
           <div>{weather?.current.condition.text}</div>
-          <div> {weather?.current.temp_c}°</div>
+          <div> {weather?.current.temp_c}C°</div>
         </div>
       </div>
       <iframe
