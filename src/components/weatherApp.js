@@ -16,7 +16,7 @@ export default function WeatherApp(){
         document.title=`Weather | ${weather?.location.name ?? ""}`;
     }, [weather]);
 
-    async function loadInfo(city="Buenos Ai"){
+    async function loadInfo(city="Buenos Aires"){
         try {
             const request = await fetch(`${process.env.REACT_APP_URL}&key=${process.env.REACT_APP_KEY}&q=${city}`
             );
